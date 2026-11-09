@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>joddi</title>
+<meta name="description" content="joddi — จดรายจ่ายง่ายๆ เห็นภาพรวมเงินในกระเป๋า ใช้ได้ออฟไลน์ ข้อมูลอยู่ในเครื่องคุณ">
+<meta name="theme-color" content="#f4f6f3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1311" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="joddi">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="app">
+  <header class="top">
+    <div class="brand"><span class="logo">฿</span><span>joddi</span></div>
+    <div class="monthnav" id="monthnav">
+      <button data-act="prev-month" aria-label="เดือนก่อนหน้า">‹</button>
+      <button class="monthlabel" data-act="this-month" id="monthlabel" aria-label="กลับไปเดือนนี้"></button>
+      <button data-act="next-month" aria-label="เดือนถัดไป">›</button>
+    </div>
+  </header>
+
+  <main id="view" tabindex="-1"></main>
+
+  <nav class="tabs" aria-label="เมนูหลัก">
+    <button data-tab="home"><i>◔</i><span>ภาพรวม</span></button>
+    <button data-tab="list"><i>☰</i><span>รายการ</span></button>
+    <span class="fab-gap"></span>
+    <button data-tab="stats"><i>▥</i><span>สถิติ</span></button>
+    <button data-tab="settings"><i>⚙</i><span>ตั้งค่า</span></button>
+  </nav>
+  <button class="fab" data-act="add" aria-label="เพิ่มรายการ">+</button>
+</div>
+
+<div id="sheetwrap" class="sheetwrap" hidden>
+  <div class="scrim" data-act="close-sheet"></div>
+  <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="เพิ่มรายการ"></div>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<input type="file" id="importfile" accept="application/json" hidden>
+<script src="js/app.js"></script>
+</body>
+</html>

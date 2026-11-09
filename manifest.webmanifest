@@ -1,0 +1,16 @@
+{
+  "name": "joddi — จดรายจ่าย",
+  "short_name": "joddi",
+  "description": "จดรายจ่ายง่ายๆ เห็นภาพรวมเงินในกระเป๋า ใช้ได้ออฟไลน์",
+  "lang": "th",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f4f6f3",
+  "theme_color": "#0e9f75",
+  "icons": [
+    {"src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"},
+    {"src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable"}
+  ]
+}
