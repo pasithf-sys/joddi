@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#17c995"/><stop offset="1" stop-color="#0a7d5c"/></linearGradient></defs><rect width="512" height="512" fill="url(#g)"/><text x="256" y="350" font-family="Arial,Helvetica,sans-serif" font-size="300" font-weight="700" text-anchor="middle" fill="#fff">฿</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs>
+<radialGradient id="bg" cx=".5" cy=".5" r=".75"><stop offset="0" stop-color="#14705a"/><stop offset="1" stop-color="#03120e"/></radialGradient>
+<linearGradient id="rim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d9fff0"/><stop offset="1" stop-color="#0b8c68"/></linearGradient>
+<linearGradient id="face" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4df0b8"/><stop offset="1" stop-color="#0a9a72"/></linearGradient>
+<filter id="b"><feGaussianBlur stdDeviation="22"/></filter></defs>
+<rect width="512" height="512" fill="url(#bg)"/>
+<circle cx="256" cy="256" r="184" fill="#2dd4a0" opacity=".5" filter="url(#b)"/>
+<circle cx="256" cy="256" r="171" fill="url(#rim)"/>
+<circle cx="256" cy="256" r="150" fill="url(#face)"/>
+<circle cx="256" cy="256" r="133" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="3"/>
+<text x="256" y="324" font-family="Tahoma,Arial,sans-serif" font-size="206" font-weight="700" text-anchor="middle" fill="#053a2c">฿</text>
+<path d="M376 70l10 38 38 10-38 10-10 38-10-38-38-10 38-10z" fill="#fff"/>
+</svg>

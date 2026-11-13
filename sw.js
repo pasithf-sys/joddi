@@ -1,5 +1,5 @@
 /* Service worker ของ joddi: ใช้ออฟไลน์ได้ — แก้ไฟล์แอปแล้วให้เปลี่ยน VERSION */
-const VERSION = 'v2';
+const VERSION = 'v3';
 const CACHE = `joddi-${VERSION}`;
 const FILES = ['./', 'index.html', 'css/app.css', 'js/app.js', 'manifest.webmanifest', 'icons/icon.svg', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png'];
 

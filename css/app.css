@@ -35,7 +35,7 @@ input,select{font:inherit;color:inherit}
 /* header */
 .top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:calc(14px + env(safe-area-inset-top)) 0 10px;position:sticky;top:0;background:var(--bg);z-index:5}
 .brand{display:flex;align-items:center;gap:8px;font-weight:700;font-size:19px;letter-spacing:-.3px}
-.logo{display:grid;place-items:center;width:30px;height:30px;border-radius:10px;background:linear-gradient(135deg,#17c995,#0a7d5c);color:#fff;font-size:17px;font-weight:700}
+.logo{width:30px;height:30px;border-radius:9px;display:block}
 .monthnav{display:flex;align-items:center;background:var(--card);border-radius:999px;box-shadow:var(--shadow)}
 .monthnav button{height:36px;min-width:36px;font-size:20px;color:var(--mute);border-radius:999px}
 .monthnav .monthlabel{font-size:14px;font-weight:600;color:var(--ink);padding:0 6px;min-width:96px}
